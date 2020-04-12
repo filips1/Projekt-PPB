@@ -1,5 +1,7 @@
 # Projekt-PPB
 
+Autor projektu: Filip Szpunar
+
 Temat projektu: Atlas Grzybów
 
 Wykorzystana technologia: Python/Django
