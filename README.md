@@ -10,7 +10,7 @@ Baza Danych : SQLite
 
 Zakres projektu:
 Atlas będzie zawierał podstawowe informacje dotyczące grzybów takie jak: nazwa potoczna, łacińska, jadalność, występowanie.
-Użytkownik będzie mógł dodać grzyby do atlasu, usunąć dany grzyb z atlasu, zaktualizować lub też pobrać dane dotyczące grzybów.
+Projekt realizuje podstawową funkcjonalność CRUD-a - użytkownik będzie mógł dodać grzyby do atlasu, usunąć dany grzyb z atlasu, zaktualizować lub też pobrać dane dotyczące grzybów. 
 
 Uruchomienie projektu: 
 
