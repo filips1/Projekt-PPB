@@ -43,3 +43,6 @@ def delete(request, id):
     grzyby = grzyb.objects.get(id=id)  
     grzyby.delete()  
     return redirect("/show")  
+
+def move(request):
+    return redirect("/show")
