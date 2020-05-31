@@ -1,0 +1,65 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+    <title>Dodaj Grzyba</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+      body {
+        font:12px/1.4 Verdana,Arial;
+        background:#eee;
+        height:100%;
+        margin:25px 0;
+        padding:0
+      }
+      .container{
+       position: fixed;
+       left: 40%;
+      }
+    </style>
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/insert">  
+  {% csrf_token %}  
+  <div class="container">  
+  <br>  
+    <div class="form-group row">  
+      <label class="col-sm-1 col-form-label"></label>  
+      <div class="col-sm-4">  
+        <h3>Podaj szczegóły</h3>  
+      </div>  
+    </div>  
+    <div class="form-group row">  
+      <label class="col-sm-2 col-form-label">Nazwa Grzyba</label>  
+      <div class="col-sm-4">  
+        {{ form.name }}  
+      </div>  
+    </div>  
+    <div class="form-group row">  
+      <label class="col-sm-2 col-form-label">Nazwa łacińska</label>  
+      <div class="col-sm-4">  
+        {{ form.latin }}  
+      </div>  
+    </div>  
+    <div class="form-group row">  
+      <label class="col-sm-2 col-form-label">Jadalny?</label>  
+      <div class="col-sm-4">  
+        {{ form.edible }}  
+      </div>  
+    </div>  
+    <div class="form-group row">  
+      <label class="col-sm-2 col-form-label">Występowanie</label>  
+      <div class="col-sm-4">  
+        {{ form.occurence }}  
+      </div>  
+    </div>  
+    <div class="form-group row">  
+      <label class="col-sm-1 col-form-label"></label>  
+      <div class="col-sm-4">  
+        <button type="submit" class="btn btn-primary">Potwierdź</button>  
+      </div>  
+    </div>  
+  </div>  
+</form>  
+</body>  
+</html>  

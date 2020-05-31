@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Atlas Grzybów</title>   
+</head>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style type="text/css">
+    body {
+        font:12px/1.4 Verdana,Arial;
+        background:#eee;
+        height:100%;
+        margin:25px 0;
+        padding:0
+    }
+    h1 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+
+</style>
+<body>  
+<h1>Atlas Grzybów</h1>
+<table class="table table-striped table-bordered table-sm">  
+    <thead class="thead-dark">  
+        <tr>  
+            <th>Nazwa Grzyba</th>  
+            <th>Łacińska nazwa</th>  
+            <th>Jadalny?</th>  
+            <th>Występowanie</th>  
+            <th>Dokonaj zmian</th>  
+        </tr>  
+    </thead>  
+    <tbody>  
+        {% for grzyb in grzyby %}  
+            <tr>  
+                <td>{{ grzyb.name }}</td>  
+                <td>{{ grzyb.latin }}</td>  
+                <td>{{ grzyb.edible }}</td>  
+                <td>{{ grzyb.occurence }}</td>  
+                <td>  
+                    <a href="/edit/{{ grzyb.id }}"><span class="glyphicon glyphicon-pencil" >Aktualizuj</span></a>  
+                    <a href="/delete/{{ grzyb.id }}">Usuń</a>  
+                </td>  
+            </tr>  
+        {% endfor %} 
+    </tbody>  
+</table>  
+<br>  
+<br>  
+<center>
+    <a href="/insert" class="btn btn-primary">Dodaj nowego grzyba</a>
+</center>  
+</body> 
+</html>  
