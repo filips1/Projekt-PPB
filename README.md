@@ -12,7 +12,7 @@ Użytkownik będzie mógł dodać grzyby do atlasu, usunąć dany grzyb z atlasu
 
 Uruchomienie projektu: 
 
-1. Przejdź do folderu src i w  cmd wpisz "manage.py run server".
+1. Przejdź do folderu src i w  cmd wpisz "manage.py runserver".
 2. na http://127.0.0.1:8000/ zostanie uruchomiony atlas grzybów
 
 Wymagania:
