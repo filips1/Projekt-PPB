@@ -5,6 +5,7 @@ Autor projektu: Filip Szpunar
 Temat projektu: Atlas Grzybów
 
 Wykorzystana technologia: Python/Django
+
 Baza Danych : SQLite
 
 Zakres projektu:
